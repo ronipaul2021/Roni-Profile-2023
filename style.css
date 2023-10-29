@@ -1,0 +1,455 @@
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(231, 219, 201);
+}
+
+/* Transition */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Navigation-Item */
+nav,
+.nav-link {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background: rgb(0, 4, 62);
+}
+
+.nav-link {
+  gap: 2rem;
+  list-style: none;
+  font-size: 14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: blueviolet;
+}
+
+a:hover {
+  color: rgb(255, 0, 217);
+}
+
+/* Logo */
+#logo {
+  font-size: 1.5rem;
+}
+
+.aqua {
+  color: cyan;
+}
+
+#logo:hover {
+  cursor: default;
+}
+
+/* Hamburger-Menu */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 27px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: cyan;
+  transition: all 0.3ms ease-in-out;
+  border-radius: 40%;
+}
+
+.menu-link {
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  background-color: rgb(72, 0, 148);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3ms ease-in-out;
+}
+
+.menu-link a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3ms ease-in-out;
+}
+
+.menu-link li {
+  list-style: none;
+}
+
+.menu-link.open {
+  max-height: 300px;
+}
+
+/* section */
+section {
+  padding-top: 4vh;
+  height: 110vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* Profile */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+/* #profile > div {
+  width: 40%;
+} */
+
+.section_pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 100%;
+  border: 3px solid rgb(255, 0, 255);
+}
+
+.section_pic-container:hover {
+  box-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.section_text {
+  align-self: center;
+  text-align: center;
+}
+
+.section_text p {
+  font-weight: 600;
+}
+
+.section_text_p1 {
+  text-align: center;
+}
+
+.section_text_p1:hover {
+  cursor: default;
+}
+
+.section_text_p2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.title:hover {
+  cursor: default;
+}
+
+/* About Section */
+#about {
+  position: relative;
+  margin-top: 10vh;
+}
+
+.about-more {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(134, 134, 134);
+}
+
+.about-more:hover {
+  cursor: default;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.about-me:hover {
+  cursor: default;
+}
+
+section hr {
+  background: aqua;
+  border-color: cyan transparent;
+  height: 1.3px;
+  border-radius: 100%;
+}
+
+.about-text {
+  word-spacing: 1.11px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 25px;
+  color: #9d9d9d;
+}
+
+.about-text:hover {
+  cursor: default;
+}
+
+/* Education Section */
+#education {
+  position: relative;
+  margin-top: 10vh;
+}
+
+.education-head {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(134, 134, 134);
+}
+
+.education-me {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.diploma-education {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 5rem;
+  padding: 20px 0px;
+}
+
+.highschool-education {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 6rem;
+  padding: 20px 0px;
+}
+
+.school-education {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 5rem;
+  padding: 20px 0px;
+}
+
+.year {
+  font-size: 15px;
+  color: #727272;
+  padding-top: 10px;
+}
+
+.education-details {
+  font-size: 22px;
+}
+
+.education-info {
+  font-size: 15px;
+  color: #727272;
+  padding-top: 10px;
+}
+
+/* Skill */
+#skills {
+  position: relative;
+  margin-top: 10vh;
+}
+
+.skills-more {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(134, 134, 134);
+}
+
+.skills-head {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.skills-text {
+  font-size: 25px;
+  margin: 40px 5px 40px 5px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 45px;
+}
+
+.purple {
+  color: #ff6cff;
+}
+
+.skills-icon {
+  text-align: -webkit-center;
+  letter-spacing: 35px;
+  line-height: 80px;
+  margin: 50px 5px 50px 5px;
+}
+
+/* Project */
+#project {
+  position: relative;
+  margin-top: 10vh;
+}
+
+.project-more {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(134, 134, 134);
+}
+
+.projects-head {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.project-text {
+  font-size: 25px;
+  margin: 40px 5px 40px 5px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 45px;
+}
+
+.btn-container {
+  width: 150px;
+  height: 45px;
+  border: 2px solid #d71fd7;
+  border-radius: 25px;
+}
+
+.btn-color {
+  color: #ff6cff;
+  background: transparent;
+  font-size: 19px;
+  margin: 12px 0px 10px 6px;
+  border: transparent;
+  transition: 4s;
+}
+
+.btn-container:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #ec7efd;
+}
+
+.btn-color:hover {
+  cursor: pointer;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  margin-top: 10vh;
+}
+
+.contact-more {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(134, 134, 134);
+}
+
+.contact-head {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.contact-info {
+  text-align: center;
+  letter-spacing: 25px;
+  margin: 40px;
+  padding: 10px;
+  line-height: 55px;
+}
+
+/* Footer */
+.footer-section {
+  background-color: rgb(0, 4, 62);
+}
+
+.footer-section {
+  display: flex;
+  padding: 5px 0px;
+  justify-content: space-evenly;
+  padding-top: 35px;
+}
+
+.footer-section .footer-rights {
+  text-align: center;
+  color: #717171;
+  padding: 12px 0;
+}
+
+.nav-footer-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 15px;
+  justify-content: center;
+  margin: 0px 0px 15px 0px;
+}
