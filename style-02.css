@@ -1,0 +1,164 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #profile,
+  #education,
+  .section-container {
+    display: block;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section_pic-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #profile {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .diploma-education {
+    display: block;
+    font-size: 25px;
+  }
+
+  .highschool-education {
+    display: block;
+    font-size: 25px;
+  }
+
+  .school-education {
+    display: block;
+    font-size: 25px;
+  }
+
+  .year {
+    padding: 5px 0px 20px 0px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #profile {
+    height: 65vh;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #profile {
+    height: 65vh;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .about-me {
+    height: fit-content;
+    margin: 0px 0px 0px 15px;
+    letter-spacing: 10px;
+  }
+
+  .education-me {
+    margin-left: 10px;
+    letter-spacing: 10px;
+    padding: 0px;
+  }
+
+  .diploma-education {
+    gap: 1rem;
+    display: block;
+  }
+
+  .highschool-education {
+    gap: 4rem;
+    display: block;
+  }
+
+  .school-education {
+    display: block;
+  }
+
+  .year {
+    padding: 5px 0px 15px 0px;
+  }
+
+  .projects-head {
+    letter-spacing: 10px;
+  }
+
+  .contact-head {
+    letter-spacing: 10px;
+  }
+
+  .contact-info {
+    margin: 20px;
+    letter-spacing: 20px;
+  }
+
+  .nav-footer-links {
+    gap: 5px;
+    justify-content: space-around;
+    font-size: 12px;
+  }
+
+  .footer-rights {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .logo {
+    font-size: 31px;
+  }
+
+  #profile {
+    height: 65vh;
+    margin-bottom: 0;
+  }
+}
